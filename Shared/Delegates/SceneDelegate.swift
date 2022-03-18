@@ -1,6 +1,6 @@
 //
-//  FloatingTextFieldApp.swift
-//  Shared
+//  SceneDelegate.swift
+//  FloatingTextField
 //
 //  Created by Kiarash Vosough on 3/18/22.
 //
@@ -25,39 +25,23 @@
 //  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+import UIKit
 import SwiftUI
 
-@main
-struct FloatingTextFieldAppWrapper {
-    static func main() {
-        if #available(iOS 14.0, *) {
-            FloatingTextFieldApp.main()
-        }
-        else {
-            // Support for IOS 13 by using SceneDelegate and AppDelegate
-            UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(AppDelegate.self))
-        }
-    }
-}
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-@available(iOS 14.0, *)
-struct FloatingTextFieldApp: App {
-    
-    var body: some Scene {
-        WindowGroup {
-            MainContentView()
-        }
-    }
-}
+    var window: UIWindow?
 
-struct MainContentView: View {
-    
-    @State var text: String = ""
-    
-    var body: some View {
-        ScrollView {
-            FloatingTextField(title: "Your Email Address", text: $text)
-                .frame(width: 350, height: 60, alignment: .center)
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        let contentView = MainContentView()
+
+        // Use a UIHostingController as window root view controller.
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = UIHostingController(rootView: contentView)
+            self.window = window
+            window.makeKeyAndVisible()
         }
     }
 }

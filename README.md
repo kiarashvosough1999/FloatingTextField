@@ -1,7 +1,7 @@
 # FloatingTextField
 
-[![Swift](https://img.shields.io/badge/Swift-5.0_or_Higher-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.1_5.2_5.3_5.4-Orange?style=flat-square)
-[![Platforms](https://img.shields.io/badge/Platforms-iOS_15.0-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS_watchOS_Linux_Windows-Green?style=flat-square)
+[![Swift](https://img.shields.io/badge/Swift-5.3_or_Higher-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.1_5.2_5.3_5.4-Orange?style=flat-square)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS_13.0-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS_watchOS_Linux_Windows-Green?style=flat-square)
 
 Attractive FloatingTextField Using SwiftUI
 
@@ -17,7 +17,7 @@ Attractive FloatingTextField Using SwiftUI
 
 | Platform | Minimum Swift Version | Status |
 | --- | --- | --- |
-| iOS 15.0+ | 5.0 | Tested |
+| iOS 13.0+ | 5.0 | Tested |
 
 ## Usage
 

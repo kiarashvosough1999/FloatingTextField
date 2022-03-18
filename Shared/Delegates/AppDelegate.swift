@@ -1,6 +1,6 @@
 //
-//  FloatingTextFieldApp.swift
-//  Shared
+//  AppDelegate.swift
+//  FloatingTextField
 //
 //  Created by Kiarash Vosough on 3/18/22.
 //
@@ -25,39 +25,13 @@
 //  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-import SwiftUI
+import UIKit
 
-@main
-struct FloatingTextFieldAppWrapper {
-    static func main() {
-        if #available(iOS 14.0, *) {
-            FloatingTextFieldApp.main()
-        }
-        else {
-            // Support for IOS 13 by using SceneDelegate and AppDelegate
-            UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(AppDelegate.self))
-        }
-    }
-}
-
-@available(iOS 14.0, *)
-struct FloatingTextFieldApp: App {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var body: some Scene {
-        WindowGroup {
-            MainContentView()
-        }
-    }
-}
-
-struct MainContentView: View {
+    var window: UIWindow?
     
-    @State var text: String = ""
-    
-    var body: some View {
-        ScrollView {
-            FloatingTextField(title: "Your Email Address", text: $text)
-                .frame(width: 350, height: 60, alignment: .center)
-        }
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        true
     }
 }
