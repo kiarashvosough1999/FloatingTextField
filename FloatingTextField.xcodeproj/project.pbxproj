@@ -14,6 +14,12 @@
 		DECBEFF327E45474005E8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECBEFE127E45474005E8061 /* Assets.xcassets */; };
 		DECBEFF427E45474005E8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECBEFE127E45474005E8061 /* Assets.xcassets */; };
 		DECBEFFF27E454A4005E8061 /* String++Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECBEFFE27E454A4005E8061 /* String++Extension.swift */; };
+		DEFAA53027E4A9590036BB4E /* LegacyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA52F27E4A9590036BB4E /* LegacyTextField.swift */; };
+		DEFAA53127E4A9590036BB4E /* LegacyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA52F27E4A9590036BB4E /* LegacyTextField.swift */; };
+		DEFAA53327E4B5AB0036BB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA53227E4B5AB0036BB4E /* SceneDelegate.swift */; };
+		DEFAA53427E4B5AB0036BB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA53227E4B5AB0036BB4E /* SceneDelegate.swift */; };
+		DEFAA53627E4B6150036BB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA53527E4B6150036BB4E /* AppDelegate.swift */; };
+		DEFAA53727E4B6150036BB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFAA53527E4B6150036BB4E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		DECBEFEC27E45474005E8061 /* FloatingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECBEFEE27E45474005E8061 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		DECBEFFE27E454A4005E8061 /* String++Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++Extension.swift"; sourceTree = "<group>"; };
+		DEFAA52F27E4A9590036BB4E /* LegacyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyTextField.swift; sourceTree = "<group>"; };
+		DEFAA53227E4B5AB0036BB4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEFAA53527E4B6150036BB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE34544327E529B500DCA819 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DEFAA53227E4B5AB0036BB4E /* SceneDelegate.swift */,
+				DEFAA53527E4B6150036BB4E /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DE34544427E529D100DCA819 /* Componnents */ = {
+			isa = PBXGroup;
+			children = (
+				DECBEFE027E45473005E8061 /* FloatingTextField.swift */,
+				DEFAA52F27E4A9590036BB4E /* LegacyTextField.swift */,
+			);
+			path = Componnents;
+			sourceTree = "<group>";
+		};
 		DECBEFD927E45473005E8061 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +83,10 @@
 		DECBEFDE27E45473005E8061 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DE34544427E529D100DCA819 /* Componnents */,
+				DE34544327E529B500DCA819 /* Delegates */,
 				DECBEFFD27E45498005E8061 /* Extension */,
 				DECBEFDF27E45473005E8061 /* FloatingTextFieldApp.swift */,
-				DECBEFE027E45473005E8061 /* FloatingTextField.swift */,
 				DECBEFE127E45474005E8061 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFAA53627E4B6150036BB4E /* AppDelegate.swift in Sources */,
+				DEFAA53327E4B5AB0036BB4E /* SceneDelegate.swift in Sources */,
 				DECBEFF127E45474005E8061 /* FloatingTextField.swift in Sources */,
 				DECBEFFF27E454A4005E8061 /* String++Extension.swift in Sources */,
+				DEFAA53027E4A9590036BB4E /* LegacyTextField.swift in Sources */,
 				DECBEFEF27E45474005E8061 /* FloatingTextFieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFAA53127E4A9590036BB4E /* LegacyTextField.swift in Sources */,
 				DECBEFF227E45474005E8061 /* FloatingTextField.swift in Sources */,
 				DECBEFF027E45474005E8061 /* FloatingTextFieldApp.swift in Sources */,
+				DEFAA53727E4B6150036BB4E /* AppDelegate.swift in Sources */,
+				DEFAA53427E4B5AB0036BB4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
